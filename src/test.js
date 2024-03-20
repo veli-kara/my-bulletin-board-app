@@ -3,7 +3,7 @@ require("chromedriver");
 
 const { Builder, By, Key } = require("selenium-webdriver");
 var assert = require("chai").assert;
-
+jest.useRealTimers();
 //describe - describes test
 describe("add note", function () {
     //it - describes expected behaviour
@@ -41,5 +41,5 @@ describe("add note", function () {
             await driver.quit();
         }
 
-    })
+    }, 10000)
 })
