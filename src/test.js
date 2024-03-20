@@ -1,7 +1,7 @@
 // diese Datei gehört in einen unterordner der src heißen soll
 require("chromedriver");
 
-const { Builder, By, Key } = require("selenium-webdriver");
+const { Builder, By, Key, Capabilities } = require("selenium-webdriver");
 var assert = require("chai").assert;
 
 //describe - describes test
