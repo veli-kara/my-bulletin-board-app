@@ -16,6 +16,10 @@ jobs:
         with:
           node-version: '18'
 
+      - name: Install Chrome on Agent
+        uses: browser-actions/setup-chrome@v1
+
+
       - name: Install Dependencies
         run: |
           npm install
